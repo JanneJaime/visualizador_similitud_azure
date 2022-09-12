@@ -1,0 +1,29 @@
+.card:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: aliceblue;
+} 
+
+circle, text{
+    cursor: pointer;
+}
+
+.card:active{
+    transform: scale(0.99);
+}
+#points {
+    -webkit-animation: fadeinout 4s linear 1 forwards;
+    animation: fadeinout 4s linear infinite forwards;
+}
+
+@-webkit-keyframes fadeinout {
+0% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+0% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 0; }
+}
